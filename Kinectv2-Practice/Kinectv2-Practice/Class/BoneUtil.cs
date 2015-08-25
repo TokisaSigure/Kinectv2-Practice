@@ -42,11 +42,13 @@ namespace Kinectv2_Practice.Class
 
         /// <summary>
         /// Brush used for drawing hands that are currently tracked as closed
+        /// ブラシは手を描画するために使用、これは現在トラッキングを終えているものとする(ロスト時の処理)
         /// </summary>
         private readonly Brush handClosedBrush = new SolidColorBrush(Color.FromArgb(128, 255, 0, 0));
 
         /// <summary>
         /// Brush used for drawing hands that are currently tracked as opened
+        /// ブラシは手を描画するために使用、これは現在トラッキングを開始しているものとする(発見時の処理)
         /// </summary>
         private readonly Brush handOpenBrush = new SolidColorBrush(Color.FromArgb(128, 0, 255, 0));
 
