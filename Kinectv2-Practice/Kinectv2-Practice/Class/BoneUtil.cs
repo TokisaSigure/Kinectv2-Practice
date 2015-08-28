@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -42,23 +42,25 @@ namespace Kinectv2_Practice.Class
 
         /// <summary>
         /// Brush used for drawing hands that are currently tracked as closed
-        /// ブラシは手を描画するために使用、これは現在トラッキングを終えているものとする(ロスト時の処理)
+        /// ブラシは手を描画するために使用、これは現在トラッキングしている手が閉じられている（グー）
         /// </summary>
         private readonly Brush handClosedBrush = new SolidColorBrush(Color.FromArgb(128, 255, 0, 0));
 
         /// <summary>
         /// Brush used for drawing hands that are currently tracked as opened
-        /// ブラシは手を描画するために使用、これは現在トラッキングを開始しているものとする(発見時の処理)
+        /// ブラシは手を描画するために使用、現在トラッキングしている手が開かれている（パー）
         /// </summary>
         private readonly Brush handOpenBrush = new SolidColorBrush(Color.FromArgb(128, 0, 255, 0));
 
         /// <summary>
         /// Brush used for drawing hands that are currently tracked as in lasso (pointer) position
+        /// ブラシは手を描画するために使用、現在追跡されている手がチョキ（2本指が立っている）場合
         /// </summary>
         private readonly Brush handLassoBrush = new SolidColorBrush(Color.FromArgb(128, 0, 0, 255));
 
         /// <summary>
         /// Brush used for drawing joints that are currently tracked
+        /// 接合点を描画するためのブラシ、現在追跡されているべきだ
         /// </summary>
         private readonly Brush trackedJointBrush = new SolidColorBrush(Color.FromArgb(255, 68, 192, 68));
 
