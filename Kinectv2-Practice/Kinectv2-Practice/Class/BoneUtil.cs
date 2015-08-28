@@ -60,37 +60,44 @@ namespace Kinectv2_Practice.Class
 
         /// <summary>
         /// Brush used for drawing joints that are currently tracked
-        /// 接合点を描画するためのブラシ、現在追跡されているべきだ
+        /// 接合点を描画するためのブラシ、現在トラッキングされている場合
         /// </summary>
         private readonly Brush trackedJointBrush = new SolidColorBrush(Color.FromArgb(255, 68, 192, 68));
 
         /// <summary>
         /// Brush used for drawing joints that are currently inferred
+        /// (前略)推論されて居る場合（トラッキングで来ていないとき）
         /// </summary>        
         private readonly Brush inferredJointBrush = Brushes.Yellow;
 
         /// <summary>
         /// Pen used for drawing bones that are currently inferred
+        /// ペンは、推測されるボーンを描画するのに使用する
         /// </summary>        
         private readonly Pen inferredBonePen = new Pen(Brushes.Gray, 1);
 
         /// <summary>
         /// Drawing group for body rendering output
+        /// ボディレンタリング出力用の描画グループ
         /// </summary>
         private DrawingGroup drawingGroup;
 
         /// <summary>
         /// Drawing image that we will display
+        /// ディスプレイにイメージ描画
         /// </summary>
         private DrawingImage imageSource;
 
         /// <summary>
         /// Active Kinect sensor
+        ///　キネクトささってる？
         /// </summary>
         private KinectSensor kinectSensor = null;
 
         /// <summary>
         /// Coordinate mapper to map one type of point to another
+        /// 別のポイントのいずれかのタイプをマッピングするマッパー座標
+        /// マッパー座標・・・
         /// </summary>
         private CoordinateMapper coordinateMapper = null;
 
