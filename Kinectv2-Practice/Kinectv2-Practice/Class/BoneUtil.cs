@@ -38,7 +38,7 @@ namespace Kinectv2_Practice.Class
         /// Constant for clamping Z values of camera space points from being negative
         /// カメラ空間のZ軸が負数にならないための定数
         /// </summary>
-        private const float InferredZPositionClamp = 0.1f;
+        public float InferredZPositionClamp = 0.1f;
 
         /// <summary>
         /// Brush used for drawing hands that are currently tracked as closed
@@ -136,4 +136,6 @@ namespace Kinectv2_Practice.Class
         /// </summary>
         private string statusText = null;
     }
+
+
 }

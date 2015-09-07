@@ -3,9 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="299" Margin="10,10,0,0" VerticalAlignment="Top" Width="497">
+        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="271" Margin="25,38,0,0" VerticalAlignment="Top" Width="463">
             <Label x:Name="errorLog" Content="Label" Canvas.Left="119" Canvas.Top="131" Width="188" Visibility="Hidden"/>
         </Canvas>
+        <Label x:Name="textLabel" Content="ボーン未取得" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" Width="83"/>
 
     </Grid>
 </Window>
